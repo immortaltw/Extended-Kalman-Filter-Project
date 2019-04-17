@@ -27,6 +27,11 @@ class Tools {
    */
   Eigen::MatrixXd CalculateJacobian(const Eigen::VectorXd& x_state);
 
+  /**
+   * A helper method to keep angle between 0 and 2*PI 
+   */
+  double CheckAngle(double angle);
+
 };
 
 #endif  // TOOLS_H_

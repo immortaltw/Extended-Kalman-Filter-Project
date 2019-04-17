@@ -2,8 +2,11 @@
 #define KALMAN_FILTER_H_
 
 #include "Eigen/Dense"
+#include "tools.h"
 
 class KalmanFilter {
+ private:
+  Tools tools_;
  public:
   /**
    * Constructor
