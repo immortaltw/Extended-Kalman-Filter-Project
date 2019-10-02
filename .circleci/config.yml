@@ -11,7 +11,7 @@ jobs:
           command: 'apt-get update && apt-get install -y sudo && rm -rf /var/lib/apt/lists/*'
       - run:
           name: Installing clang
-          command: 'apt-get update && apt-get install clang++'
+          command: 'apt-get update && apt-get install -y clang-6.0'
       - run:
           name: Install CMAKE
           command: 'apt-get update && sudo apt-get install -y cmake'
