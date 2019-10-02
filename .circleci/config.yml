@@ -14,7 +14,7 @@ jobs:
           command: 'apt-get update && apt-get install -y clang-6.0'
       - run:
           name: Install CMAKE
-          command: 'apt-get update && sudo apt-get install -y cmake'
+          command: 'apt-get update && sudo apt-get install -y build-essential && sudo apt-get install -y cmake'
       - run:
           name: Build
           command: 'mkdir build && cd build && cmake .. && make'
